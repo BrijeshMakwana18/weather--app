@@ -9,6 +9,26 @@
     <title>Weather</title>
   </head>
   <body>
-    <h1>Weather App</h1>
+    <div id="container">
+      <div id="pre-app-container" class="goldilocks box">
+        <div class="container-one">
+          <h2>Weather App</h2>
+          <div class="line"></div>
+        </div>
+        <div class="container-two">
+          <input
+            type="text"
+            id="search"
+            class="city-input"
+            placeholder="Enter city name"
+          />
+          <p id="city-error"></p>
+          <div id="btn-search" onclick="onSearch()">Search</div>
+        </div>
+      </div>
+    </div>
+    <div id="weather-container">
+      <h2 id="city-name" onclick="goBack()"></h2>
+    </div>
   </body>
 </html>
