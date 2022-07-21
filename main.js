@@ -1,3 +1,4 @@
+let API_KEY = "b0500e9ff7224080b1c180531221607";
 let data = {
   lat: 33.44,
   lon: -94.04,
@@ -82,6 +83,16 @@ function onSearch() {
   if (!cityName) {
     error.innerHTML = "Please enter city name";
   } else {
+    fetch(
+      `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${cityName}&days=4&aqi=no&alerts=no
+      `
+    )
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+      });
     weatherContainer.style.display = "block";
     preApp.style.display = "none";
     error.innerHTML = "";
