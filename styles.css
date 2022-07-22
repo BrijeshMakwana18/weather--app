@@ -11,17 +11,18 @@ body {
 #container {
   height: 100vh;
   width: 100vw;
-  background-color: hsl(220deg 100% 80%);
+  background-color: #eaeff9;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.4s;
 }
 
 #pre-app-container {
-  height: 30vh;
+  height: 40vh;
   width: 30vw;
-  background-color: #2c3333;
-  border-radius: 4px;
+  background-color: #5249b9;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,7 +48,7 @@ body {
 }
 
 .goldilocks.box {
-  --shadow-color: hsl(220deg 60% 50%);
+  --shadow-color: #5249b9;
 }
 .box {
   filter: drop-shadow(1px 2px 8px var(--shadow-color));
@@ -69,7 +70,7 @@ body {
 
 .city-input {
   width: 60%;
-  height: 4vh;
+  height: 6vh;
   border-radius: 4px;
   padding-left: 10px;
   font-size: 1.2rem;
@@ -88,12 +89,13 @@ body {
   align-items: center;
   justify-content: center;
   display: flex;
-  background-color: #ffffff;
+  background-color: #56d1f9;
   border-radius: 4px;
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: bold;
   transition: 0.4s;
+  color: white;
 }
 
 #btn-search:hover {
@@ -113,4 +115,39 @@ body {
 #city-name {
   font-weight: bold;
   font-size: 2rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #pre-app-container {
+    width: 70vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #pre-app-container {
+    width: 60vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #pre-app-container {
+    width: 50vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #pre-app-container {
+    width: 40vw;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #pre-app-container {
+    width: 30vw;
+  }
 }
