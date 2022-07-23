@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #def2fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+#pre-app-container {
+  height: 40vh;
+  width: 30vw;
+  background-color: #0d1125;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-one {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-two {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.goldilocks.box {
+  --shadow-color: #0d1125;
+}
+.box {
+  filter: drop-shadow(1px 2px 4px var(--shadow-color));
+}
+
+#pre-app-container > .container-one > h2 {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.line {
+  height: 1px;
+  width: 90%;
+  background-color: white;
+  align-self: center;
+  opacity: 0.2;
+}
+
+.city-input {
+  width: 60%;
+  height: 6vh;
+  border-radius: 4px;
+  padding-left: 10px;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
+#city-error {
+  color: #dac4df;
+  font-size: 1.2rem;
+}
+
+#btn-search {
+  height: 6vh;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #fcb017;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: 0.4s;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
+#btn-search:hover {
+  transform: scale(1.1);
+}
+
+#weather-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #dac4df;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.current {
+  /* padding: 4vh 4vw; */
+  margin: 0 35vw 0 35vw;
+  background-color: #170f25;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.inner-row-out {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 4%;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.large-margin {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+.today {
+  font-size: 2rem;
+  margin-top: 1vh;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  color: #efe8ee;
+}
+.back {
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  cursor: pointer;
+}
+#weather-img {
+  height: 60px;
+  width: 60px;
+  margin-top: 1vh;
+  object-fit: contain;
+}
+
+.big-img {
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.med-img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+#location {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  color: #efe8ee;
+}
+.med-font {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  color: #efe8ee;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin: 4vh 1vw 1vh 1vw;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+
+#env,
+#last {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  color: #efe8ee;
+  bottom: 10px;
+}
+
+.cloud {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+}
+
+#cloud-one {
+  -webkit-animation: one 6s ease-in-out alternate infinite;
+}
+#cloud-two {
+  -webkit-animation: two 6s ease-in-out alternate infinite;
+}
+
+#cloud-three {
+  -webkit-animation: three 6s ease-in-out alternate infinite;
+}
+
+#cloud-four {
+  -webkit-animation: four 6s ease-in-out alternate infinite;
+}
+@-webkit-keyframes one {
+  from {
+    top: 10vh;
+    left: 10vw;
+  }
+
+  to {
+    top: 60vh;
+    left: 60vw;
+  }
+}
+
+@-webkit-keyframes two {
+  from {
+    top: 10vh;
+    right: 10vw;
+  }
+
+  to {
+    top: 60vh;
+    right: 60vw;
+  }
+}
+
+@-webkit-keyframes three {
+  from {
+    bottom: 10vh;
+    left: 10vw;
+  }
+
+  to {
+    bottom: 60vh;
+    left: 60vw;
+  }
+}
+
+@-webkit-keyframes four {
+  from {
+    bottom: 10vh;
+    right: 10vw;
+  }
+
+  to {
+    bottom: 60vh;
+    right: 60vw;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #pre-app-container {
+    width: 70vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #pre-app-container {
+    width: 60vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #pre-app-container {
+    width: 50vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #pre-app-container {
+    width: 40vw;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #pre-app-container {
+    width: 30vw;
+  }
+}

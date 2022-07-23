@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="pre-app-container" class="goldilocks box">
+        <div class="container-one">
+          <h2>Weather App</h2>
+          <div class="line"></div>
+        </div>
+        <div class="container-two">
+          <input
+            type="text"
+            id="search"
+            class="city-input"
+            placeholder="Enter city name"
+          />
+          <p id="city-error"></p>
+          <div id="btn-search" onclick="onSearch()">Search</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <img class="cloud" id="cloud-one" src="/assets/cloud-one.png" />
+      <img class="cloud" id="cloud-two" src="/assets/cloud-two.png" />
+      <img class="cloud" id="cloud-three" src="/assets/cloud-three.png" />
+      <img class="cloud" id="cloud-four" src="/assets/cloud-one.png" />
+    </div>
+    <div id="weather-container">
+      <img class="med-img back" src="/assets/arrow.png" onclick="goBack()" />
+      <div class="current">
+        <p class="today">Today</p>
+        <img id="weather-img" />
+        <div class="inner-row large-margin">
+          <img class="big-img" src="/assets/location.png" />
+          <p id="location" class="med-font"></p>
+        </div>
+        <div class="inner-row-out">
+          <div class="inner-row">
+            <img class="med-img" src="/assets/temperature.png" />
+            <p id="temp" class="med-font"></p>
+          </div>
+          <div class="inner-row">
+            <img class="med-img" src="/assets/wind.png" />
+            <p id="wind" class="med-font"></p>
+          </div>
+          <div class="inner-row">
+            <img class="med-img" src="/assets/resilience.png" />
+            <p id="pre" class="med-font"></p>
+          </div>
+        </div>
+        <div class="bottom-container">
+          <p id="env"></p>
+          <p id="last"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
