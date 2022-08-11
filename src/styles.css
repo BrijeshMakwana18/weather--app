@@ -117,7 +117,8 @@ body {
 
 .current {
   /* padding: 4vh 4vw; */
-  margin: 0 35vw 0 35vw;
+  margin: 0 30vw;
+  padding: 2vh 2vw;
   background-color: #170f25;
   border-radius: 1rem;
   display: flex;
